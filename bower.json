@@ -1,0 +1,21 @@
+{
+  "name": "tito_agudelo",
+  "description": "ES6 Test frontend styling for Cyza",
+  "main": "index.js",
+  "authors": [
+    "Tito Agudelo"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.98.2"
+  }
+}

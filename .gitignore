@@ -1,0 +1,7 @@
+node_modules
+bower_components
+npm-debug.log
+bundle.js
+*.js.map
+.idea
+.DS_Store

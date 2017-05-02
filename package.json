@@ -1,0 +1,45 @@
+{
+  "name": "tito_agudelo",
+  "version": "1.0.0",
+  "description": "ES6 Test frontend styling for Cyza",
+  "main": "index.js",
+  "repository": "git@bitbucket.org:tagudelo/tito_agudelo.git",
+  "author": "Tito Agudelo",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "html-loader": "^0.4.4",
+    "standard": "^8.6.0",
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "start": "yarn && yarn bower && yarn build && yarn open",
+    "open": "concurrently \"http-server -a localhost -p 3000\" \"open http://localhost:3000/\"",
+    "bower": "bower install",
+    "build": "webpack",
+    "build:watch": "webpack --watch"
+  },
+  "dependencies": {
+    "bower": "^1.8.0",
+    "concurrently": "^3.4.0",
+    "global": "^4.3.2",
+    "http-server": "^0.9.0"
+  },
+  "standard": {
+    "globals": [
+      "CustomEvent",
+      "HTMLElement",
+      "customElements",
+      "jasmine",
+      "describe",
+      "beforeEach",
+      "it",
+      "expect"
+    ],
+    "ignore": [
+      "src/bundle.js"
+    ]
+  }
+}
